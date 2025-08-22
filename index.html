@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    My Blog ~~~!
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: "Helvetica", "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1; /* 본문이 남는 공간 채움 */
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>김동우 블로그</h1>
+    <p>환영합니다 👋 제 개인 블로그에 오신 것을!</p>
+  </header>
+
+  <nav>
+    <a href="#about">자기소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>👤 자기소개</h2>
+      <p>안녕하세요! 저는 개발자 김동우입니다. 
+         웹 개발과 새로운 기술 배우는 걸 좋아합니다.</p>
+    </section>
+
+    <section id="projects">
+      <h2>💻 프로젝트</h2>
+      <ul>
+        <li><a href="https://github.com/wlsghKim/project1">프로젝트 1</a> - 설명글</li>
+        <li><a href="https://github.com/wlsghKim/project2">프로젝트 2</a> - 설명글</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📩 연락처</h2>
+      <p>Email: <a href="mailto:llsoftll1@naver.com">llsoftll1@naver.com</a></p>
+      <p>GitHub: <a href="https://github.com/wlsghKim" target="_blank">https://github.com/wlsghKim</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 김동우. All rights reserved.</p>
+  </footer>
+</body>
 </html>
